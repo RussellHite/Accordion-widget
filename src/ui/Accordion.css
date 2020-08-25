@@ -1,0 +1,38 @@
+/*
+Place your custom CSS here
+*/
+
+.accordion-panel button{
+    width: 100%;
+        display: block;
+        border: none;
+        background-color: transparent; 
+        padding: 16px;
+        
+        border-bottom: 1px solid #cbcbcb;
+        text-align: left;
+}
+
+.accordion-panel button p{
+    margin-bottom: 0; 
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.accordion-panel.active button{
+border-bottom-color: red;
+}
+
+.accordion-panel.inactive .section{
+display: none;   
+}
+
+.accordion-panel.inactive .open, 
+.accordion-panel.active .closed {
+    display: block;   
+}
+
+.accordion-panel.active .open, 
+.accordion-panel.inactive .closed {
+    display: none;   
+}

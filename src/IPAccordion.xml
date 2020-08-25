@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="mendix.ipaccordion.IPAccordion" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>IPAccordion</name>
+    <description>Group of collapsible containers with expand/collapse all functionality and freedom to expand/collapse as many as needed.</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="objectList" type="object" isList="true" required="false">
+                <caption>Section List</caption>
+                <description>List of Content Sections</description>
+                <properties>
+                    <propertyGroup caption="Section List">
+                        <property key="content" type="widgets">
+                            <caption>Content</caption>
+                            <description></description> 
+                        </property>
+                        <property key="label" type="string" required="true">
+                            <caption>Label</caption>
+                            <description></description>
+                        </property>
+                    </propertyGroup>
+                </properties>
+            </property>
+            <property key="expandImg" type="image" required="false">
+                <caption>Expand Image</caption>
+                <description>Select which image you want to show to expand the accordion section</description>
+            </property>
+            <property key="collapseImg" type="image" required="false">
+                <caption>Collapse Image</caption>
+                <description>Select which image you want to show to collapse the accordion section</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
